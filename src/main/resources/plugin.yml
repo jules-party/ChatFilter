@@ -1,0 +1,4 @@
+name: ChatFilter
+version: '${project.version}'
+main: zoink.jule.chatfilter.ChatFilter
+api-version: 1.16
