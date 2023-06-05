@@ -45,6 +45,8 @@ public class Filter implements Listener {
         if(stringContainsItemFromList(chatEvent.message().toString(), filterWords)) {
             player.sendMessage(ChatColor.RED + "I see that.");
             chatEvent.setCancelled(true);
+        } else {
+            return;
         }
 
         String playerDataPath = plugin.getDataFolder().getAbsolutePath() + "/players.yml";
